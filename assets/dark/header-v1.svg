@@ -47,8 +47,8 @@
     <text fill="var(--muted)" class="mono" x="48" y="374" font-size="11.5" letter-spacing="3">FULL-STACK SYSTEMS</text>
     <text fill="var(--accent)" class="mono" x="252" y="374" font-size="11.5">·</text>
     <text fill="var(--muted)" class="mono" x="282" y="374" font-size="11.5" letter-spacing="3">MOBILE APPLICATION</text>
-    <text fill="var(--accent)" class="mono" x="550" y="374" font-size="11.5">·</text>
-    <text fill="var(--muted)" class="mono" x="580" y="374" font-size="11.5" letter-spacing="3">TERMINAL INTERFACES</text>
+    <text fill="var(--accent)" class="mono" x="490" y="374" font-size="11.5">·</text>
+    <text fill="var(--muted)" class="mono" x="520" y="374" font-size="11.5" letter-spacing="3">TERMINAL INTERFACES</text>
     <text fill="var(--muted)" class="mono" x="952" y="374" font-size="11.5" letter-spacing="3" text-anchor="end">KCA — 2026 / 2028</text>
   </g>
 </svg>

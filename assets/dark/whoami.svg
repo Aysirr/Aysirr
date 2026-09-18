@@ -23,8 +23,8 @@
   <text class="mono rise a5" x="48"  y="182" font-size="11" fill="var(--muted)" letter-spacing="2.5">STATUS  ▸ </text>
   <text class="mono rise a5" x="154" y="182" font-size="15" fill="var(--accent)">Open to Internships · Freelance · Collaboration · Startups.</text>
 
-  <text class="mono rise a6" x="48"  y="216" font-size="11" fill="var(--muted)" letter-spacing="2.5">BACKGROUND▸ </text>
-  <text class="mono rise a6" x="154" y="216" font-size="15" fill="var(--bone)">Moringa School → KCA University. |
+  <text class="mono rise a6" x="48"  y="216" font-size="11" fill="var(--muted)" letter-spacing="2.5">BACKGROUND ▸ </text>
+  <text class="mono rise a6" x="164" y="216" font-size="15" fill="var(--bone)">Moringa School → KCA University. |
     <tspan font-size="11" fill="var(--muted)" letter-spacing="2.5">HOBBY ▸ </tspan>
     <tspan font-size="15" fill="var(--bone)">Literature · Chess · Photography · F1 · Football.</tspan>
   </text>
