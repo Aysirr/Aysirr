@@ -21,7 +21,6 @@
       .bar,.spark,.dot,.rise,.ping { animation: none; }
       .bar{transform:scaleX(1)} .spark{stroke-dashoffset:0} .dot,.rise{opacity:1} .ping{opacity:0}
     }
-      :root { --bone: #000000; --muted: #000000; --dim: #000000; --rule: #000000; --accent: #000000; --node-bg: #FFFFFF; --core-bg: #FFFFFF; --ghost: #000000; }
   </style>
 
   <line x1="48" y1="40" x2="952" y2="40" stroke="var(--rule)"/>
