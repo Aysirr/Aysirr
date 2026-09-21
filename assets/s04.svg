@@ -19,7 +19,7 @@
   <g class="f">
     <text class="mono" x="48" y="68" font-size="52" fill="var(--ghost)">03</text>
     <text class="mono tick" x="128" y="58" font-size="14" fill="var(--accent)" letter-spacing="6">TELEMETRY</text>
-    <text class="mono" x="952" y="58" font-size="11" fill="var(--muted)" letter-spacing="2" text-anchor="end">~/04-telemetry</text>
+    <text class="mono" x="952" y="58" font-size="11" fill="var(--muted)" letter-spacing="2" text-anchor="end">~/03-telemetry</text>
   </g>
   <line class="draw" x1="278" y1="53" x2="815" y2="53"/>
 </svg>
