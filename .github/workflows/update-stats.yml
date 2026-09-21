@@ -1,0 +1,39 @@
+name: Update telemetry stats
+
+on:
+  schedule:
+    # Runs once a day at 03:00 UTC — adjust as you like
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]      # optional: also refresh on every push to main
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch stats and regenerate SVG
+        env:
+          GITHUB_USERNAME: Aysirr
+          # GITHUB_TOKEN is auto-provided by Actions — no need to create your own
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-stats.mjs
+
+      - name: Commit updated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/telemetry.svg assets/stats.json
+          git diff --quiet --cached || git commit -m "chore: refresh telemetry stats"
+          git push
