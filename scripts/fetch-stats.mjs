@@ -101,8 +101,8 @@ async function main() {
 }
 
 async function renderSvg(stats) {
-  const lightTemplate = await readFile("assets/telemetry.svg", "utf8");
-  const darkTemplate = await readFile("assets/dark/telemetry.svg", "utf8");
+  const lightTemplate = await fs.readFile("assets/telemetry.svg", "utf8");
+  const darkTemplate = await fs.readFile("assets/dark/telemetry.svg", "utf8");
 
   // Max bar width in your original design (swift's 230px was ~27%)
   // so px-per-percent ≈ 230 / 27 ≈ 8.5
