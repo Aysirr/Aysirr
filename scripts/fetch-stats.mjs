@@ -101,7 +101,8 @@ async function main() {
 }
 
 async function renderSvg(stats) {
-  const template = await fs.readFile("assets/telemetry-template.svg", "utf8");
+  const lightTemplate = await readFile("assets/telemetry.svg", "utf8");
+  const darkTemplate = await readFile("assets/dark/telemetry.svg", "utf8");
 
   // Max bar width in your original design (swift's 230px was ~27%)
   // so px-per-percent ≈ 230 / 27 ≈ 8.5
@@ -126,7 +127,7 @@ async function renderSvg(stats) {
     yPct += ROW_HEIGHT;
   }
 
-  let svg = template
+  let svg = lightTemplate
     .replace("<!-- LANGUAGE_ROWS -->", bars.trim())
     .replace("{{REPO_COUNT}}", stats.repoCount);
 
