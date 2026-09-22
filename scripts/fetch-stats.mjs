@@ -38,11 +38,11 @@ const MAX_LANGUAGE_ROWS = 5;
 // Each entry: read this template, write the rendered result to this output path.
 const TARGETS = [
   {
-    template: "assets/telemetry-light.template.svg",
+    template: "assets/templates/telemetry-light.template.svg",
     output: "assets/telemetry.svg",
   },
   {
-    template: "assets/telemetry-dark.template.svg",
+    template: "assets/templates/telemetry-dark.template.svg",
     output: "assets/dark/telemetry.svg",
   },
 ];
