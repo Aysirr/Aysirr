@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-09-22T21:06:46.959Z",
+  "repoCount": 30,
+  "languages": [
+    {
+      "lang": "Python",
+      "pct": 81.9
+    },
+    {
+      "lang": "JavaScript",
+      "pct": 16.2
+    },
+    {
+      "lang": "C++",
+      "pct": 0.8
+    },
+    {
+      "lang": "HTML",
+      "pct": 0.4
+    },
+    {
+      "lang": "CSS",
+      "pct": 0.3
+    },
+    {
+      "lang": "other",
+      "pct": 0.5
+    }
+  ]
+}
