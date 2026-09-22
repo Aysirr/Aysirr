@@ -124,9 +124,16 @@ async function main() {
 }
 
 function buildLanguageRows(stats) {
-  // Max bar width in the original design (swift's 230px was ~27%)
-  // so px-per-percent ≈ 230 / 27 ≈ 8.5
-  const PX_PER_PCT = 8.5;
+  // The column between x=48 and the divider at x=360 has limited width.
+  // Reserve room for the "NN.N%" label after the bar so it never gets
+  // clipped or runs into the next column.
+  const MAX_BAR_WIDTH = 220;
+  const MIN_BAR_WIDTH = 4;
+
+  // Scale every bar relative to the LARGEST percentage in the list, so the
+  // biggest language always fills the column nicely and nothing can ever
+  // overflow — regardless of whether the top language is 27% or 82%.
+  const topPct = Math.max(...stats.languages.map((l) => l.pct));
 
   let bars = "";
   let yLabel = 108;
@@ -136,7 +143,10 @@ function buildLanguageRows(stats) {
 
   for (let i = 0; i < stats.languages.length; i++) {
     const { lang, pct } = stats.languages[i];
-    const width = Math.max(4, Math.round(pct * PX_PER_PCT));
+    const width = Math.max(
+      MIN_BAR_WIDTH,
+      Math.round((pct / topPct) * MAX_BAR_WIDTH)
+    );
     const fillVar = i === 0 ? "var(--accent)" : "var(--bone)";
     const barClass = `g${i + 1}`;
     bars += `    <text fill="var(--bone)" x="48" y="${yLabel}">${lang.toLowerCase()}</text>       <rect class="bar ${barClass}" x="48" y="${yBar}" width="${width}" height="6" fill="${fillVar}"/><text fill="var(--muted)" x="${
