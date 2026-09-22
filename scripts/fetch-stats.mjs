@@ -2,7 +2,15 @@
 //
 // Fetches this user's public, non-fork repos from the GitHub API,
 // aggregates language byte-counts across all of them, computes
-// percentages, and writes the results into the SVG template.
+// percentages, and writes the results into BOTH the light and
+// dark SVG templates.
+//
+// IMPORTANT: this script reads from assets/templates/*.template.svg
+// (which always keep their {{PLACEHOLDER}} markers intact) and writes
+// the rendered result to assets/telemetry.svg and assets/dark/telemetry.svg.
+// Never point the "template" read at the same file the script writes to —
+// once a placeholder gets replaced with real data, it's gone, and the
+// next run has nothing left to replace.
 //
 // Run with: GITHUB_TOKEN=xxx GITHUB_USERNAME=yourname node scripts/fetch-stats.mjs
 
@@ -24,8 +32,20 @@ const headers = {
 };
 
 // How many languages to show as individual bars before collapsing
-// the rest into "other". Matches your 6-row SVG layout.
+// the rest into "other". Matches the 6-row SVG layout.
 const MAX_LANGUAGE_ROWS = 5;
+
+// Each entry: read this template, write the rendered result to this output path.
+const TARGETS = [
+  {
+    template: "assets/telemetry-light.template.svg",
+    output: "assets/telemetry.svg",
+  },
+  {
+    template: "assets/telemetry-dark.template.svg",
+    output: "assets/dark/telemetry.svg",
+  },
+];
 
 async function getAllRepos() {
   let repos = [];
@@ -97,14 +117,14 @@ async function main() {
   await fs.mkdir("assets", { recursive: true });
   await fs.writeFile("assets/stats.json", JSON.stringify(stats, null, 2));
 
-  await renderSvg(stats);
+  // Render into every target (light + dark) from its own untouched template
+  for (const target of TARGETS) {
+    await renderSvg(stats, target.template, target.output);
+  }
 }
 
-async function renderSvg(stats) {
-  const lightTemplate = await fs.readFile("assets/telemetry.svg", "utf8");
-  const darkTemplate = await fs.readFile("assets/dark/telemetry.svg", "utf8");
-
-  // Max bar width in your original design (swift's 230px was ~27%)
+function buildLanguageRows(stats) {
+  // Max bar width in the original design (swift's 230px was ~27%)
   // so px-per-percent ≈ 230 / 27 ≈ 8.5
   const PX_PER_PCT = 8.5;
 
@@ -127,13 +147,22 @@ async function renderSvg(stats) {
     yPct += ROW_HEIGHT;
   }
 
-  let svg = lightTemplate
-    .replace("<!-- LANGUAGE_ROWS -->", bars.trim())
+  return bars.trim();
+}
+
+async function renderSvg(stats, templatePath, outputPath) {
+  const template = await fs.readFile(templatePath, "utf8");
+  const bars = buildLanguageRows(stats);
+
+  const svg = template
+    .replace("<!-- LANGUAGE_ROWS -->", bars)
     .replace("{{REPO_COUNT}}", stats.repoCount);
 
-  await fs.mkdir("assets", { recursive: true });
-  await fs.writeFile("assets/telemetry.svg", svg);
-  console.log("Wrote assets/telemetry.svg");
+  await fs.mkdir(outputPath.split("/").slice(0, -1).join("/") || ".", {
+    recursive: true,
+  });
+  await fs.writeFile(outputPath, svg);
+  console.log(`Wrote ${outputPath}`);
 }
 
 main().catch((err) => {

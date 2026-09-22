@@ -34,6 +34,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/telemetry.svg assets/stats.json
+          git add assets/telemetry.svg assets/dark/telemetry.svg assets/stats.json
           git diff --quiet --cached || git commit -m "chore: refresh telemetry stats"
           git push
