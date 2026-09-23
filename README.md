@@ -24,3 +24,10 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/contribution-graph.svg"/><img src="assets/contribution-graph.svg" width="97%" alt="Contribution activity by month"/></picture>
 
 </div>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s05.svg"/><img src="assets/s05.svg" alt="04 — the route"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/timeline.svg"/><img src="assets/timeline.svg" alt="Development timeline"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/experience.svg"/><img src="assets/experience.svg" alt="Professional experience"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s06.svg"/><img src="assets/s06.svg" alt="05 — stack"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/stack.svg"/><img src="assets/stack.svg" alt="Technical stack"/></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/footer.svg"/><img src="assets/footer.svg" alt="Current status"/></picture>
