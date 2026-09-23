@@ -2,8 +2,8 @@ name: Update telemetry stats
 
 on:
   schedule:
-    # Runs once a day at 03:00 UTC — adjust as you like
-    - cron: "0 3 * * *"
+    # Runs every hour, on the hour — adjust as you like
+    - cron: "0 * * * *"
   workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
   push:
     branches: [main]      # optional: also refresh on every push to main

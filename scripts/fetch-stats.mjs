@@ -4,7 +4,7 @@
 //   1. Telemetry panel      — language distribution (REST API)
 //   2. GitHub stats panel   — stars, commits, PRs, issues, contributed-to
 //                             + language-by-repo bars (GraphQL API)
-//   3. Contribution graph   — 12-month commit bar chart (GraphQL API)
+//   3. Contribution graph   — rolling 12-month commit bar chart (GraphQL API)
 //
 // REST calls use the auto-provided GITHUB_TOKEN from Actions — no setup needed.
 // GraphQL calls need at least `read:user` scope. If GITHUB_TOKEN fails on the
@@ -144,7 +144,12 @@ async function graphql(query) {
 
 async function getGithubStats() {
   const now = new Date();
-  const from = new Date(now.getFullYear(), 0, 1).toISOString(); // Jan 1 this year
+  // Rolling 12-month window (e.g. Oct last year → Sep this year) instead of
+  // calendar-year-to-date, so the chart always shows a full 12 months and
+  // doesn't shrink to almost nothing every January.
+  const from = new Date(now);
+  from.setFullYear(from.getFullYear() - 1);
+  const fromISO = from.toISOString();
   const to = now.toISOString();
 
   const query = `
@@ -156,7 +161,7 @@ async function getGithubStats() {
         repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, PULL_REQUEST, ISSUE]) {
           totalCount
         }
-        contributionsCollection(from: "${from}", to: "${to}") {
+        contributionsCollection(from: "${fromISO}", to: "${to}") {
           totalCommitContributions
           contributionCalendar {
             weeks {
