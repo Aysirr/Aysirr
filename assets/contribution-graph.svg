@@ -11,23 +11,29 @@
   <line x1="48" y1="40" x2="952" y2="40" stroke="var(--ink)" opacity=".3"/>
 
   <g class="mono" font-size="9" fill="var(--ink)">
-<rect class="bar" x="70.6" y="177" width="55.2" height="3" fill="var(--ink)" style="transform-origin:70.6px 180px"/>
-    <text x="98.2" y="196" text-anchor="middle" fill="var(--dim)">01</text>
-    <rect class="bar" x="171.0" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:171.0px 180px"/>
-    <text x="198.7" y="196" text-anchor="middle" fill="var(--dim)">02</text>
-    <rect class="bar" x="271.5" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:271.5px 180px"/>
-    <text x="299.1" y="196" text-anchor="middle" fill="var(--dim)">03</text>
-    <rect class="bar" x="371.9" y="126" width="55.2" height="54" fill="var(--ink)" style="transform-origin:371.9px 180px"/>
-    <text x="399.6" y="196" text-anchor="middle" fill="var(--dim)">04</text>
-    <rect class="bar" x="472.4" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:472.4px 180px"/>
-    <text x="500.0" y="196" text-anchor="middle" fill="var(--dim)">05</text>
-    <rect class="bar" x="572.8" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:572.8px 180px"/>
-    <text x="600.4" y="196" text-anchor="middle" fill="var(--dim)">06</text>
-    <rect class="bar" x="673.3" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:673.3px 180px"/>
-    <text x="700.9" y="196" text-anchor="middle" fill="var(--dim)">07</text>
-    <rect class="bar" x="773.7" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:773.7px 180px"/>
-    <text x="801.3" y="196" text-anchor="middle" fill="var(--dim)">08</text>
-    <rect class="bar" x="874.2" y="60" width="55.2" height="120" fill="var(--ink)" style="transform-origin:874.2px 180px"/>
-    <text x="901.8" y="196" text-anchor="middle" fill="var(--dim)">09</text>
+<rect class="bar" x="64.9" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:64.9px 180px"/>
+    <text x="85.7" y="196" text-anchor="middle" fill="var(--dim)">10</text>
+    <rect class="bar" x="140.3" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:140.3px 180px"/>
+    <text x="161.0" y="196" text-anchor="middle" fill="var(--dim)">11</text>
+    <rect class="bar" x="215.6" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:215.6px 180px"/>
+    <text x="236.3" y="196" text-anchor="middle" fill="var(--dim)">12</text>
+    <rect class="bar" x="290.9" y="177" width="41.4" height="3" fill="var(--ink)" style="transform-origin:290.9px 180px"/>
+    <text x="311.7" y="196" text-anchor="middle" fill="var(--dim)">01</text>
+    <rect class="bar" x="366.3" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:366.3px 180px"/>
+    <text x="387.0" y="196" text-anchor="middle" fill="var(--dim)">02</text>
+    <rect class="bar" x="441.6" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:441.6px 180px"/>
+    <text x="462.3" y="196" text-anchor="middle" fill="var(--dim)">03</text>
+    <rect class="bar" x="517.0" y="128" width="41.4" height="52" fill="var(--ink)" style="transform-origin:517.0px 180px"/>
+    <text x="537.7" y="196" text-anchor="middle" fill="var(--dim)">04</text>
+    <rect class="bar" x="592.3" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:592.3px 180px"/>
+    <text x="613.0" y="196" text-anchor="middle" fill="var(--dim)">05</text>
+    <rect class="bar" x="667.6" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:667.6px 180px"/>
+    <text x="688.3" y="196" text-anchor="middle" fill="var(--dim)">06</text>
+    <rect class="bar" x="743.0" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:743.0px 180px"/>
+    <text x="763.7" y="196" text-anchor="middle" fill="var(--dim)">07</text>
+    <rect class="bar" x="818.3" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:818.3px 180px"/>
+    <text x="839.0" y="196" text-anchor="middle" fill="var(--dim)">08</text>
+    <rect class="bar" x="893.6" y="60" width="41.4" height="120" fill="var(--ink)" style="transform-origin:893.6px 180px"/>
+    <text x="914.3" y="196" text-anchor="middle" fill="var(--dim)">09</text>
   </g>
 </svg>
