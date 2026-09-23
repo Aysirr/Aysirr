@@ -23,7 +23,7 @@
     <text x="387.0" y="196" text-anchor="middle" fill="var(--dim)">02</text>
     <rect class="bar" x="441.6" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:441.6px 180px"/>
     <text x="462.3" y="196" text-anchor="middle" fill="var(--dim)">03</text>
-    <rect class="bar" x="517.0" y="131" width="41.4" height="49" fill="var(--ink)" style="transform-origin:517.0px 180px"/>
+    <rect class="bar" x="517.0" y="133" width="41.4" height="47" fill="var(--ink)" style="transform-origin:517.0px 180px"/>
     <text x="537.7" y="196" text-anchor="middle" fill="var(--dim)">04</text>
     <rect class="bar" x="592.3" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:592.3px 180px"/>
     <text x="613.0" y="196" text-anchor="middle" fill="var(--dim)">05</text>
