@@ -11,13 +11,13 @@
   <line x1="48" y1="40" x2="952" y2="40" stroke="var(--ink)" opacity=".3"/>
 
   <g class="mono" font-size="9" fill="var(--ink)">
-<rect class="bar" x="70.6" y="176" width="55.2" height="4" fill="var(--ink)" style="transform-origin:70.6px 180px"/>
+<rect class="bar" x="70.6" y="177" width="55.2" height="3" fill="var(--ink)" style="transform-origin:70.6px 180px"/>
     <text x="98.2" y="196" text-anchor="middle" fill="var(--dim)">01</text>
     <rect class="bar" x="171.0" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:171.0px 180px"/>
     <text x="198.7" y="196" text-anchor="middle" fill="var(--dim)">02</text>
     <rect class="bar" x="271.5" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:271.5px 180px"/>
     <text x="299.1" y="196" text-anchor="middle" fill="var(--dim)">03</text>
-    <rect class="bar" x="371.9" y="116" width="55.2" height="64" fill="var(--ink)" style="transform-origin:371.9px 180px"/>
+    <rect class="bar" x="371.9" y="126" width="55.2" height="54" fill="var(--ink)" style="transform-origin:371.9px 180px"/>
     <text x="399.6" y="196" text-anchor="middle" fill="var(--dim)">04</text>
     <rect class="bar" x="472.4" y="180" width="55.2" height="0" fill="var(--ink)" style="transform-origin:472.4px 180px"/>
     <text x="500.0" y="196" text-anchor="middle" fill="var(--dim)">05</text>
