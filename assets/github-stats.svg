@@ -16,7 +16,7 @@
     <text x="52" y="58" font-size="15" font-weight="700" letter-spacing="2">GITHUB STATS</text>
     <line class="rule" x1="52" y1="72" x2="452" y2="72"/>
     <text x="52" y="110" font-size="11" letter-spacing="1">TOTAL STARS</text><text x="436" y="110" font-size="13" text-anchor="end">13</text>
-    <text x="52" y="146" font-size="11" letter-spacing="1">COMMITS THIS YEAR</text><text x="436" y="146" font-size="13" text-anchor="end">61</text>
+    <text x="52" y="146" font-size="11" letter-spacing="1">COMMITS THIS YEAR</text><text x="436" y="146" font-size="13" text-anchor="end">62</text>
     <text x="52" y="182" font-size="11" letter-spacing="1">TOTAL PULL REQUESTS</text><text x="436" y="182" font-size="13" text-anchor="end">7</text>
     <text x="52" y="218" font-size="11" letter-spacing="1">TOTAL ISSUES</text><text x="436" y="218" font-size="13" text-anchor="end">0</text>
     <text x="52" y="254" font-size="11" letter-spacing="1">CONTRIBUTED TO</text><text x="436" y="254" font-size="13" text-anchor="end">0</text>
