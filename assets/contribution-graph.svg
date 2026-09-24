@@ -17,13 +17,13 @@
     <text x="161.0" y="196" text-anchor="middle" fill="var(--dim)">11</text>
     <rect class="bar" x="215.6" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:215.6px 180px"/>
     <text x="236.3" y="196" text-anchor="middle" fill="var(--dim)">12</text>
-    <rect class="bar" x="290.9" y="177" width="41.4" height="3" fill="var(--ink)" style="transform-origin:290.9px 180px"/>
+    <rect class="bar" x="290.9" y="178" width="41.4" height="2" fill="var(--ink)" style="transform-origin:290.9px 180px"/>
     <text x="311.7" y="196" text-anchor="middle" fill="var(--dim)">01</text>
     <rect class="bar" x="366.3" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:366.3px 180px"/>
     <text x="387.0" y="196" text-anchor="middle" fill="var(--dim)">02</text>
     <rect class="bar" x="441.6" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:441.6px 180px"/>
     <text x="462.3" y="196" text-anchor="middle" fill="var(--dim)">03</text>
-    <rect class="bar" x="517.0" y="136" width="41.4" height="44" fill="var(--ink)" style="transform-origin:517.0px 180px"/>
+    <rect class="bar" x="517.0" y="141" width="41.4" height="39" fill="var(--ink)" style="transform-origin:517.0px 180px"/>
     <text x="537.7" y="196" text-anchor="middle" fill="var(--dim)">04</text>
     <rect class="bar" x="592.3" y="180" width="41.4" height="0" fill="var(--ink)" style="transform-origin:592.3px 180px"/>
     <text x="613.0" y="196" text-anchor="middle" fill="var(--dim)">05</text>

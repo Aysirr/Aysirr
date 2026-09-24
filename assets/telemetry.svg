@@ -58,7 +58,7 @@
 
   <!-- profile counters -->
   <g>
-    <g class="rise n1"><text fill="var(--bone)" class="mono" x="720" y="118" font-size="44">30</text><text fill="var(--muted)" class="mono" x="790" y="112" font-size="10" letter-spacing="2.5">REPOSITORIES</text></g>
+    <g class="rise n1"><text fill="var(--bone)" class="mono" x="720" y="118" font-size="44">31</text><text fill="var(--muted)" class="mono" x="790" y="112" font-size="10" letter-spacing="2.5">REPOSITORIES</text></g>
     <g class="rise n2"><text fill="var(--bone)" class="mono" x="720" y="178" font-size="44">1</text><text fill="var(--muted)" class="mono" x="790" y="172" font-size="10" letter-spacing="2.5">PROJECTS DOCUMENTED</text></g>
     <g class="rise n3"><text fill="var(--bone)" class="mono" x="720" y="238" font-size="44">3</text><text fill="var(--muted)" class="mono" x="790" y="232" font-size="10" letter-spacing="1.0">PLATFORMS — WEB, MOBILE, CLI </text></g>
     <g class="rise n4"><text fill="var(--accent)" class="mono" x="718" y="298" font-size="44">∞</text><text fill="var(--muted)" class="mono" x="790" y="292" font-size="10" letter-spacing="2.5">TERMINAL TABS OPEN RIGHT NOW</text></g>
