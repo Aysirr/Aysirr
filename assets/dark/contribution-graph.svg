@@ -33,7 +33,7 @@
     <text x="763.7" y="196" text-anchor="middle" fill="var(--dim)">08</text>
     <rect class="bar" x="818.3" y="60" width="41.4" height="120" fill="var(--ink)" style="transform-origin:818.3px 180px"/>
     <text x="839.0" y="196" text-anchor="middle" fill="var(--dim)">09</text>
-    <rect class="bar" x="893.6" y="173" width="41.4" height="7" fill="var(--ink)" style="transform-origin:893.6px 180px"/>
+    <rect class="bar" x="893.6" y="171" width="41.4" height="9" fill="var(--ink)" style="transform-origin:893.6px 180px"/>
     <text x="914.3" y="196" text-anchor="middle" fill="var(--dim)">10</text>
   </g>
 </svg>
