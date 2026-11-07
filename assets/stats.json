@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-07T16:42:37.251Z",
-  "repoCount": 37,
+  "generatedAt": "2026-11-07T20:37:32.983Z",
+  "repoCount": 36,
   "totalStars": 16,
   "languages": [
     {
       "lang": "Python",
-      "pct": 81.7
+      "pct": 81.8
     },
     {
       "lang": "JavaScript",
@@ -17,7 +17,7 @@
     },
     {
       "lang": "HTML",
-      "pct": 0.6
+      "pct": 0.5
     },
     {
       "lang": "CSS",
@@ -28,7 +28,7 @@
       "pct": 0.5
     }
   ],
-  "totalCommits": 80,
+  "totalCommits": 77,
   "totalPRs": 7,
   "totalIssues": 0,
   "contributedTo": 0,
@@ -79,7 +79,7 @@
     },
     {
       "month": "2026-11",
-      "count": 9
+      "count": 5
     }
   ]
 }
